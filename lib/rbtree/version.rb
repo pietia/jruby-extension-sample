@@ -1,3 +1,3 @@
-module Rbtree
+class RBTree
   VERSION = "0.0.1"
 end

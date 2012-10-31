@@ -18,6 +18,7 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+*.jar
 
 # YARD artifacts
 .yardoc
@@ -27,3 +28,4 @@ doc/
 # editors
 .idea
 *.iml
+
