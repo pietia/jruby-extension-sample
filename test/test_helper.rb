@@ -1,2 +1,2 @@
-require 'bundler/setup'
-
+require "bundler/setup"
+require "test/unit"
