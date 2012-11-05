@@ -4,7 +4,7 @@ class RBTreeTest < Test::Unit::TestCase
   def setup
     @rbtree = RBTree[*%w(b B d D a A c C)]
   end
-  
+
   def test_new
     assert_nothing_raised {
       RBTree.new
@@ -14,13 +14,13 @@ class RBTreeTest < Test::Unit::TestCase
     assert_raises(ArgumentError) { RBTree.new("a") {} }
     assert_raises(ArgumentError) { RBTree.new("a", "a") }
   end
-  
+
   def test_aref
     assert_equal("A", @rbtree["a"])
     assert_equal("B", @rbtree["b"])
     assert_equal("C", @rbtree["c"])
     assert_equal("D", @rbtree["d"])
-    
+
     assert_equal(nil, @rbtree["e"])
     @rbtree.default = "E"
     assert_equal("E", @rbtree["e"])

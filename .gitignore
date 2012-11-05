@@ -19,6 +19,7 @@ test/tmp
 test/version_tmp
 tmp
 *.jar
+ext/rbtree/target
 
 # YARD artifacts
 .yardoc
